@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #02b58e;
+}
+
+.principal {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 535px;
+    height: 420px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 40px 70px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.title .user {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #d9d6d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal h6 {
+    color: #b9bbbd;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 38px;
+    font-size: 12px;
+}
+
+.buy-details {
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.detail p {
+    color: #656965;
+    font-weight: 500;
+}
+
+.detail h1 {
+    font-size: 20px;
+}
+
+.bici img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}
