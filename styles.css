@@ -1,78 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #02b58e;
+  background-color: #02b58e;
 }
 
 .principal {
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 535px;
-    height: 420px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 535px;
+  height: 420px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
 }
 
 .title {
-    margin: 40px 70px 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 40px 70px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 .title .user {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid #d9d6d4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d9d6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-container {
+  position: relative;
+}
+
+.title .effect {
+  width: 43px;
+  height: 43px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #d9d6d4;
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  border-radius: 50%;
+  z-index: 1;
+  transform: scale(0);
+  transition-duration: 0.3s;
+}
+
+.user:hover + .effect {
+  transform: scale(1);
 }
 
 .principal h6 {
-    color: #b9bbbd;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 50px;
-    margin-bottom: 38px;
-    font-size: 12px;
+  color: #b9bbbd;
+  font-family: "Roboto", sans-serif;
+  margin-left: 50px;
+  margin-bottom: 38px;
+  font-size: 12px;
 }
 
 .buy-details {
-    margin-left: 50px;
-    margin-right: 70px;
+  margin-left: 50px;
+  margin-right: 70px;
 }
 
 .detail {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 .detail p {
-    color: #656965;
-    font-weight: 500;
+  color: #656965;
+  font-weight: 500;
 }
 
 .detail h1 {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.bici {
+  height: 220px;
+  position: absolute;
+  bottom: 30px;
 }
 
 .bici img {
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  /* max-height: 100%; */
+  display: block;
 }
